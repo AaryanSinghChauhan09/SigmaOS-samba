@@ -3,7 +3,7 @@ name = "SigmaOS-samba"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "samba component"
+description = "Samba"
 upstream = []
 
 [contract]
