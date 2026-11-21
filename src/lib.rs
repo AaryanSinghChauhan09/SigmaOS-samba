@@ -4,6 +4,9 @@
 //! Real implementation: samba_items, events, validation, deterministic storage.
 //! Replaces the placeholder stub.
 
+/// SMB/CIFS client and server module.
+pub mod sigmasmb;
+
 use std::collections::BTreeMap;
 use std::fmt;
 
