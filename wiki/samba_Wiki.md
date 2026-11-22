@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-samba Component Wiki
+# SigmaOS-samba Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-samba provides Samba for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-samba provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-samba Abstraction
-- Fail-Fast on SigmaOS-samba Initialization Errors
-- Deterministic SigmaOS-samba Setup
-- Clear Abstraction Over SigmaOS-samba APIs
-- Composition over Inheritance for SigmaOS-samba extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-samba Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-samba Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-samba Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-samba APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-samba extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-samba follows a SigmaOS-samba pattern:
+SigmaOS-samba follows a SigmaOS-samba pattern:
 - **SigmaOS-samba Core**: Provides SigmaOS-samba support, SigmaOS-samba management, and SigmaOS-samba tracking
 - **Management**: Supports SigmaOS-samba management, SigmaOS-samba configuration, and SigmaOS-samba lifecycle
 - **Tracking**: Supports SigmaOS-samba status, SigmaOS-samba tracking, and SigmaOS-samba lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-samba follows a SigmaOS-samba pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-samba by given configuration
--  - Register a SigmaOS-samba by given name
--  - Get SigmaOS-samba status and SigmaOS-samba availability
--  - Track SigmaOS-samba management and SigmaOS-samba tracking
+- Manage a SigmaOS-samba by given configuration
+- Register a SigmaOS-samba by given name
+- Get SigmaOS-samba status and SigmaOS-samba availability
+- Track SigmaOS-samba management and SigmaOS-samba tracking
 - Error types for SigmaOS-samba failure scenarios or unsupported SigmaOS-samba types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-samba init, SigmaOS-samba management)
 3. **Assert**: Verify the expected SigmaOS-samba results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-samba initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-samba failure scenarios
 - Unit tests provided for SigmaOS-samba management and configuration
